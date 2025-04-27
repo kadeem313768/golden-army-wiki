@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: golden-army-wiki
+    env: python
+    buildCommand: ""
+    startCommand: "python wiki_api_server.py"
+    envVars:
+      - key: PORT
+        value: 5000
